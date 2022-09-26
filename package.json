@@ -6,5 +6,23 @@
   "repository": "https://github.com/10-Speed/eslint-config-ten-speed-react.git",
   "author": "10speed.lt",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.19.1",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-lodash": "^7.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 8.0.0",
+    "typescript": ">= 4.8.3"
+  }
 }
