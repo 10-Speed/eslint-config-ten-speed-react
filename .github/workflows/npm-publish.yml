@@ -17,6 +17,6 @@ jobs:
           node-version: 16
           registry-url: https://registry.npmjs.org/
       - run: yarn install
-      - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_PUBLISH_TOKEN }}
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
