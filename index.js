@@ -31,13 +31,15 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    'prettier',
   ],
-  plugins: ['react', 'react-hooks', 'jsx-a11y', 'prettier', 'lodash'],
+  plugins: ['react', 'react-hooks', 'jsx-a11y', 'lodash'],
 
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.tsx', '.jsx'] }],
     'lodash/import-scope': [2, 'method'],
+    'react/react-in-jsx-scope': 0,
+    'react/prop-types': 0,
+    'react/no-unescaped-entities': 0,
   },
 
   overrides: [
@@ -56,7 +58,7 @@ module.exports = {
         warnOnUnsupportedTypeScriptVersion: true,
       },
       plugins: ['@typescript-eslint'],
-      
+
       rules: {
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
