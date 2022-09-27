@@ -64,6 +64,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
+        '@typescript-eslint/no-explicit-any': 2
       },
     },
   ],
