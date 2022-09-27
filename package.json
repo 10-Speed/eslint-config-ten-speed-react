@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ten-speed-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint config tailored for react projects by 10speed team",
   "main": "index.js",
   "repository": "https://github.com/10-Speed/eslint-config-ten-speed-react.git",
