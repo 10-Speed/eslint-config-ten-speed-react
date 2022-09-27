@@ -4,8 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    tags:
+      - "*"
 
 jobs:
   publish-npm:
@@ -16,6 +17,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+
+      - name: Match tag to packge version
+        id: match-tag-to-package-version
+        uses: geritol/match-tag-to-package-version@0.2.0
 
       - name: Cache node modules
         uses: actions/cache@v2
