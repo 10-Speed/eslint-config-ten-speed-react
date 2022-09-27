@@ -1,7 +1,10 @@
 # CONTRIBUTING
 
 ## Adding rules
-- Modify code and create a pull-request to `main` branch
+- modify code and create a pull-request to `main` branch
+
+## Debugging
+- for local development use [yalc](https://github.com/wclr/yalc)
 
 ## Release
 - make sure all new changes are in `main` branch
