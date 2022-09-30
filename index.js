@@ -42,6 +42,21 @@ module.exports = {
     'react/no-unescaped-entities': 0,
     'react/display-name': 0,
     'jsx-a11y/no-autofocus': 0,
+    'no-unused-vars': [
+      2,
+      {
+        args: 'none',
+        ignoreRestSiblings: true,
+      },
+    ],
+    'no-unused-expressions': [
+      2,
+      {
+        allowShortCircuit: true,
+        allowTernary: true,
+        allowTaggedTemplates: true,
+      },
+    ]
   },
 
   overrides: [
@@ -64,6 +79,23 @@ module.exports = {
       rules: {
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
+        'no-unused-vars': 0,
+        '@typescript-eslint/no-unused-vars': [
+          2,
+          {
+            args: 'none',
+            ignoreRestSiblings: true,
+          },
+        ],
+        'no-unused-expressions': 0,
+        '@typescript-eslint/no-unused-expressions': [
+          2,
+          {
+            allowShortCircuit: true,
+            allowTernary: true,
+            allowTaggedTemplates: true,
+          },
+        ]
       },
     },
   ],
