@@ -64,7 +64,7 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: 'tsconfig.json',
+        project: './tsconfig.json',
         tsconfigRootDir: './',
         ecmaVersion: 2018,
         sourceType: 'module',
@@ -79,6 +79,7 @@ module.exports = {
       rules: {
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
+        '@typescript-eslint/no-unnecessary-type-assertion': 2,
         'no-unused-vars': 0,
         '@typescript-eslint/no-unused-vars': [
           2,
