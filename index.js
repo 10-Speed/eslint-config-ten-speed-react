@@ -56,7 +56,7 @@ module.exports = {
         allowTernary: true,
         allowTaggedTemplates: true,
       },
-    ]
+    ],
   },
 
   overrides: [
@@ -96,6 +96,12 @@ module.exports = {
             allowTernary: true,
             allowTaggedTemplates: true,
           },
+        ],
+        "@typescript-eslint/consistent-type-assertions": [
+          2,
+          {
+            "assertionStyle": "never"
+          }
         ]
       },
     },
