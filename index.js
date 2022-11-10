@@ -57,6 +57,7 @@ module.exports = {
         allowTaggedTemplates: true,
       },
     ],
+    'no-console': [2, { allow: ['error'] }],
   },
 
   overrides: [
@@ -97,12 +98,12 @@ module.exports = {
             allowTaggedTemplates: true,
           },
         ],
-        "@typescript-eslint/consistent-type-assertions": [
+        '@typescript-eslint/consistent-type-assertions': [
           2,
           {
-            "assertionStyle": "never"
-          }
-        ]
+            assertionStyle: 'never',
+          },
+        ],
       },
     },
   ],
