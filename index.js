@@ -59,6 +59,7 @@ module.exports = {
     ],
     'no-console': [2, { allow: ['error'] }],
     'max-lines': ['error', 400],
+    'max-params': ['error', 2]
   },
 
   overrides: [
