@@ -3,12 +3,12 @@ name: publish
 on:
   release:
     types:
-      - published
+      - released
 
 concurrency: publish
 jobs:
-  setversion:
-    name: Set version (ESLINT-CONFIG)
+  publish:
+    name: Publish to npm (ESLINT-CONFIG)
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -34,3 +34,7 @@ jobs:
           git config user.email "<>"
           git commit . -m "Update build version [skip ci]"
           git push origin
+
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
