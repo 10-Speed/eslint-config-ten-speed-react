@@ -5,8 +5,10 @@ name: Relase new version
 
 on:
   push:
-    tags:
-    - '*'
+    branches:
+      - none
+    # tags:
+    # - '*'
 
 jobs:
   create-release:
@@ -14,10 +16,10 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v2
-    - uses: ncipollo/release-action@v1
-      with:
-        token: ${{ secrets.GHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - uses: ncipollo/release-action@v1
+        with:
+          token: ${{ secrets.GHUB_TOKEN }}
   publish-package:
     runs-on: ubuntu-latest
     steps:
@@ -33,7 +35,7 @@ jobs:
           path: './node_modules'
           key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
           restore-keys: ${{ runner.os }}-modules-
-  
+
       - run: yarn install
       - run: npm publish
         env:
