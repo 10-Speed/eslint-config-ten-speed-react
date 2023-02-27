@@ -32,4 +32,4 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git commit . -m "Update build version [skip ci]"
-          git push origin
+          git push origin ${{ github.event.release.target_commitish }}
