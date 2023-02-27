@@ -8,7 +8,7 @@ on:
 jobs:
   setversion:
     name: Set version (ESLINT-CONFIG)
-    runs-on: [self-hosted]
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v3
