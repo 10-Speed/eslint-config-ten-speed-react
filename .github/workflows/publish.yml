@@ -5,10 +5,13 @@ on:
     types:
       - published
 
+concurrency: publish
 jobs:
   setversion:
     name: Set version (ESLINT-CONFIG)
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout Git repository
         uses: actions/checkout@v3
