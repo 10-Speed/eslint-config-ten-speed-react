@@ -35,6 +35,14 @@ jobs:
           git commit . -m "Update build version [skip ci]"
           git push origin
 
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: './node_modules'
+          key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: ${{ runner.os }}-modules-
+
+      - run: yarn install
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_PUBLISH_TOKEN}}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
