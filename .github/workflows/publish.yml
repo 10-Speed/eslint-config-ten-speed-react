@@ -16,7 +16,7 @@ jobs:
       - name: Checkout Git repository
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GHUB_TOKEN }}
+          token: ${{ secrets.ACTIONS_ACCESS_TOKEN }}
 
       - uses: actions/setup-node@v3
         with:
