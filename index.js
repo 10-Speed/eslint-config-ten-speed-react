@@ -45,8 +45,8 @@ module.exports = {
     'no-unused-vars': [
       2,
       {
-        args: 'none',
-        ignoreRestSiblings: true,
+        args: 'after-used',
+        ignoreRestSiblings: false,
       },
     ],
     'no-unused-expressions': [
