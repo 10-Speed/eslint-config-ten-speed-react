@@ -59,7 +59,7 @@ module.exports = {
     ],
     'no-console': [2, { allow: ['error'] }],
     'max-lines': ['error', 400],
-    'max-params': ['error', 2]
+    'max-params': ['error', 2],
   },
 
   overrides: [
@@ -87,8 +87,8 @@ module.exports = {
         '@typescript-eslint/no-unused-vars': [
           2,
           {
-            args: 'none',
-            ignoreRestSiblings: true,
+            args: 'after-used',
+            ignoreRestSiblings: false,
           },
         ],
         'no-unused-expressions': 0,
