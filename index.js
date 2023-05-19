@@ -46,7 +46,7 @@ module.exports = {
       2,
       {
         args: 'after-used',
-        ignoreRestSiblings: false,
+        ignoreRestSiblings: true,
         argsIgnorePattern: '^_',
       },
     ],
@@ -89,7 +89,7 @@ module.exports = {
           2,
           {
             args: 'after-used',
-            ignoreRestSiblings: false,
+            ignoreRestSiblings: true,
             argsIgnorePattern: '^_',
           },
         ],
