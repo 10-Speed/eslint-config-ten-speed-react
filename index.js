@@ -47,6 +47,7 @@ module.exports = {
       {
         args: 'after-used',
         ignoreRestSiblings: false,
+        argsIgnorePattern: '^_',
       },
     ],
     'no-unused-expressions': [
@@ -89,6 +90,7 @@ module.exports = {
           {
             args: 'after-used',
             ignoreRestSiblings: false,
+            argsIgnorePattern: '^_',
           },
         ],
         'no-unused-expressions': 0,
