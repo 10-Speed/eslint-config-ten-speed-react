@@ -35,6 +35,8 @@ module.exports = {
   plugins: ['react', 'react-hooks', 'jsx-a11y', 'lodash'],
 
   rules: {
+    'react-hooks/rules-of-hooks': 2,
+    'react-hooks/exhaustive-deps': 2,
     'react/jsx-filename-extension': [2, { extensions: ['.tsx', '.jsx'] }],
     'lodash/import-scope': [2, 'method'],
     'react/react-in-jsx-scope': 0,
