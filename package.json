@@ -18,19 +18,19 @@
     "publish:minor": "npm version minor && git push --tags && git push"
   },
   "dependencies": {
-    "@babel/core": "^7.21.0",
-    "@babel/eslint-parser": "^7.19.1",
-    "@babel/preset-react": "^7.18.6",
-    "@rushstack/eslint-patch": "^1.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@babel/core": "^7.23.0",
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/preset-react": "^7.22.15",
+    "@rushstack/eslint-patch": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "eslint-plugin-lodash": "^7.4.0",
-    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0"
   },
   "peerDependencies": {
-    "eslint": ">= 8.0.0",
-    "typescript": ">= 4.9.5"
+    "eslint": ">= 8.51.0",
+    "typescript": ">= 5.2.2"
   }
 }
