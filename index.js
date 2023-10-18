@@ -63,6 +63,10 @@ module.exports = {
     'no-console': [2, { allow: ['error'] }],
     'max-lines': ['error', 400],
     'max-params': ['error', 2],
+    'no-dupe-else-if': 2,
+    'no-lonely-if': 2,
+    'no-duplicate-case': 2,
+    'no-else-return': [2, { allowElseIf: true }],
   },
 
   overrides: [
