@@ -66,7 +66,7 @@ module.exports = {
     'no-dupe-else-if': 2,
     'no-lonely-if': 2,
     'no-duplicate-case': 2,
-    'no-else-return': [2, { allowElseIf: true }],
+    'no-else-return': [2, { allowElseIf: false }],
   },
 
   overrides: [
