@@ -67,6 +67,7 @@ module.exports = {
     'no-lonely-if': 2,
     'no-duplicate-case': 2,
     'no-else-return': [2, { allowElseIf: false }],
+    'react/jsx-curly-brace-presence': 2,
   },
 
   overrides: [
