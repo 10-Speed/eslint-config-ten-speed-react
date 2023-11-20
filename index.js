@@ -70,6 +70,7 @@ module.exports = {
     'react/jsx-curly-brace-presence': 2,
     curly: 2,
     'no-extra-boolean-cast': 2,
+    eqeqeq: ['error', 'always'],
   },
 
   overrides: [
