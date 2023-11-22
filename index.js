@@ -38,7 +38,7 @@ module.exports = {
     'react-hooks/rules-of-hooks': 2,
     'react-hooks/exhaustive-deps': 2,
     'react/jsx-filename-extension': [2, { extensions: ['.tsx', '.jsx'] }],
-    'lodash/import-scope': [2, 'method'],
+    'lodash/import-scope': [2, 'member'],
     'react/react-in-jsx-scope': 0,
     'react/prop-types': 0,
     'react/no-unescaped-entities': 0,
