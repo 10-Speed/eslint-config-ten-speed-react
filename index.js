@@ -68,6 +68,7 @@ module.exports = {
     'no-duplicate-case': 2,
     'no-else-return': [2, { allowElseIf: false }],
     'react/jsx-curly-brace-presence': 2,
+    'react/no-multi-comp': [2, { ignoreStateless: true }],
     curly: 2,
     'no-extra-boolean-cast': 2,
     eqeqeq: ['error', 'always'],
@@ -94,6 +95,7 @@ module.exports = {
         '@typescript-eslint/ban-ts-comment': 2,
         '@typescript-eslint/no-non-null-assertion': 2,
         '@typescript-eslint/no-unnecessary-type-assertion': 2,
+        '@typescript-eslint/array-type': [2, { default: 'array' }],
         'no-unused-vars': 0,
         '@typescript-eslint/no-unused-vars': [
           2,
