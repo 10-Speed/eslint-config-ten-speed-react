@@ -74,6 +74,7 @@ module.exports = {
     eqeqeq: ['error', 'always'],
     'no-nested-ternary': 2,
     'no-unneeded-ternary': 2,
+    "no-empty-pattern": 2,
   },
 
   overrides: [
