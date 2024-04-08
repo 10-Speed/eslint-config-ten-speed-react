@@ -77,6 +77,7 @@ module.exports = {
     'no-empty-pattern': 2,
     'no-useless-rename': 2,
     'prefer-const': 2,
+    'no-useless-return': 2,
   },
 
   overrides: [
