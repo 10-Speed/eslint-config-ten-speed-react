@@ -78,6 +78,7 @@ module.exports = {
     'no-useless-rename': 2,
     'prefer-const': 2,
     'no-useless-return': 2,
+    'no-var': 2,
   },
 
   overrides: [
