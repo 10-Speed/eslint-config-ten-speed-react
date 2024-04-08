@@ -72,7 +72,8 @@ module.exports = {
     curly: 2,
     'no-extra-boolean-cast': 2,
     eqeqeq: ['error', 'always'],
-    "no-nested-ternary": 2,
+    'no-nested-ternary': 2,
+    'no-unneeded-ternary': 2,
   },
 
   overrides: [
