@@ -79,6 +79,7 @@ module.exports = {
     'prefer-const': 2,
     'no-useless-return': 2,
     'no-var': 2,
+    'object-shorthand': [2, { avoidExplicitReturnArrows: true }],
   },
 
   overrides: [
