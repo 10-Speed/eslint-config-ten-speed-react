@@ -129,7 +129,6 @@ module.exports = {
             assertionStyle: 'never',
           },
         ],
-        '@typescript-eslint/no-unnecessary-template-expression': 'error',
       },
     },
   ],
