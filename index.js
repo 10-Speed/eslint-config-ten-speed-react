@@ -81,6 +81,7 @@ module.exports = {
     'no-var': 2,
     'object-shorthand': [2, 'properties'],
     'arrow-body-style': [2, 'as-needed'],
+    '@typescript-eslint/no-unnecessary-template-expression': 'error',
   },
 
   overrides: [
